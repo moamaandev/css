@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+html{
+
+    background: repeating-radial-gradient(rgb(234, 0, 255), rgb(0, 234, 255),rgb(255, 0, 170));
+    background-size: cover;
+    
+}
+
+
+*{
+    color: aliceblue;
+    position:relative;
+
+}
+
+.corner1{
+  
+  border-radius: 15px 50px 30px 5px ;
+  background: #07ee82;
+  padding: 20px;
+  width: 200px;
+  height: 150px ;
+  justify-content: center;
+  text-align:center;
+  transition: width 2s, height 2s, font-size 2s, transform 5s;
+}
+
+.corner1:hover{
+    width: 300px;
+    height: 300px;
+    font-size: 35px;
+    transform: rotate(4000deg);
+}
+  
+.corner2{
+
+    border-radius: 15px 50px 30px;
+    background-color: #07e6ee;
+    padding: 20px;
+    width: 440px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    animation-name: amaan1;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+}
+@keyframes amaan2{
+    from{
+        width:200px;
+
+    }
+    to{
+        width: 400px;
+    }
+}
+
+.box{
+    border-radius: 15px 50px 30px;
+    background-color: rgb(25, 127, 243);
+    width: 440px;
+    height:150px;
+    position:relative;
+    animation-name: amaan2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes amaan2{
+
+    from{
+    width:200px  
+    }
+
+    to{
+    width: 400px;
+    }
+}
+
+.corner3{
+
+    border-radius: 15px 50px;
+    background-color: #ee07c7;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+}
+ 
+.corner4{
+
+    border-radius:15px ;
+    background-color: rgb(255, 127, 168);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+
+}
+
+
+
+#corner1{
+    background-color: black;
+    border-radius: 50px/15px;
+    padding: 20px;
+    height: 150px;
+    width: 200px;
+    
+}
+
+#corner2{
+    background-color: burlywood;
+    border-radius:5px/50px ;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#corner3{
+    background-color: greenyellow;
+    border-radius:50%;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+    </style>
+</head>
+<body>
+<h1>The border-radius property</h1>
+<p>four value border-radius 15px 50px 30px 5px:</p>
+<p class="corner1">Rounded! corners</p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<div class="corner2">
+    <p class="box">Rounded! corners</p>
+</div>
+
+<div id="div" >
+    <h1>The border-radius Property</h1>
+
+    <p>Elliptical border - border-radius: 50px / 15px:</p>
+    <p id="corner1"></p>
+
+    <p>Elliptical border - border-radius: 15px / 50px:</p>
+    <p id="corner2"></p>
+
+    <p>Ellipse border - border-radius: 50%:</p>
+    <p id="corner3"></p>
+</div>
+</body>
+</html>
